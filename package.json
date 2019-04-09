@@ -1,0 +1,9 @@
+{
+    "name": "ZadanieTestoweIdeo",
+    "version": "0.0.0",
+    "private": true,
+    "dependencies": {
+        "express": "^4.16.4",
+        "path": "^0.12.7"
+    }
+}
