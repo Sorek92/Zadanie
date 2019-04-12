@@ -1,9 +1,13 @@
 {
-    "name": "ZadanieTestoweIdeo",
+    "name": "zadanie_testowe_ideo",
     "version": "0.0.0",
     "private": true,
     "dependencies": {
         "express": "^4.16.4",
+        "node-sass": "^4.11.0",
         "path": "^0.12.7"
+    },
+    "scripts": {
+        "sass": "node-sass sass/style.scss public/css/style.css"
     }
 }

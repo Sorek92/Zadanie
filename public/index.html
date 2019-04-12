@@ -1,11 +1,157 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        
     </head>
 
     <body>
-        fafsaasf
+        <div class="main-container">
+            <header class="header">
+                <nav class="nav">
+                    <img class="logo" srcset="./img/logo1366.png 1366w,
+                    ./img/logo1920.png 1920w"
+                    src="./img/logo1920.png" alt="Logo">
+                    <ul class="menu">
+                        <li><a href="#">Aktualności</a></li>
+                        <li><a href="#">Branże</a></li>
+                        <li><a href="#">Produkty</a></li>
+                        <li><a href="#">Usługi</a></li>
+                        <li><a href="#">Referencje</a></li>
+                        <li><a href="#">Kontakt</a></li>
+                    </ul>
+                </nav>
+                <div class="search">
+                    <input class="search-text" type="text">
+                    <a class="search-button-active" onclick="searchText()"><img srcset="./img/lupa1366A.png 1366w,
+                        ./img/lupa1920A.png 1920w" src="./img/lupa1920A.png"></a>
+                    <a class="search-button-close" onclick="closeSearch()"><img srcset="./img/x1366.png 1366w,
+                        ./img/x1920.png 1920w" src="./img/x1920.png"></a>
+                    <a class="search-button active" onclick="showSearchInput()"><img srcset="./img/lupa1366.png 1366w,
+                            ./img/lupa1920.png 1920w" src="./img/lupa1920.png"></a>
+                    
+                </div>
+                
+            </header>
+    
+            <aside>
+                <nav class="sidebar">
+                    
+                    <div class="side-menu">
+                        <div class="side-logo">
+                            <img srcset="./img/simple1366.png 1366w,
+                            ./img/simple1920.png 1920w" src="./img/simple1920.png">
+                        </div>
+                        <p>Menu</p>
+                        <span></span>
+                        <ul>
+                            <li><a href="#">Aktualności</a></li>
+                            <li><a href="#">Branże</a></li>
+                            <li><a href="#">Produkty</a></li>
+                            <li><a href="#">Usługi</a></li>
+                            <li><a href="#">Referencje</a></li>
+                            <li><a href="#">Kontakt</a></li>
+                        </ul>
+                        <span></span>           
+                        <ul>
+                            <li><a href="#">O firmie</a></li>
+                            <li><a href="#">Nagrody</a></li>
+                            <li><a href="#">Relacje inwestorskie</a></li>
+                            <li><a href="#">Partnerzy</a></li>
+                            <li><a href="#">Kariera</a></li>
+                        </ul>
+                        <span></span>
+                        <div class="socialmedia">
+                            <img srcset="./img/ico_fb1366.png 1366w,
+                            ./img/ico_fb1920.png 1920w"src="./img/ico_fb1920.png">
+                            <img srcset="./img/ico_in1366.png 1366w,
+                            ./img/ico_in1920.png 1920w"src="./img/ico_in1920.png">
+                        </div>
+                        
+                    </div>
+                    
+                </nav>
+                <button class="arrow-right" onclick="wysun()">
+                    <img srcset="./img/arrow_right1366.png 1366w,
+                        ./img/arrow_right1920.png 1920w" src="./img/arrow_right1920.png">
+                </button>
+                <button class="arrow-left disable" onclick="wsun()">
+                    <img srcset="./img/arrow_left1366.png 1366w,
+                        ./img/arrow_left1920.png 1920w" src="./img/arrow_left1920.png">
+                    </button>  
+            </aside>
+                    
+            <div class="container">
+                <div class="namePage">
+                    <p>o firmie</p>
+                </div>
+                <div class="content">
+                    <h1>SIMPLE - z nami biznes jest prostrzy!</h1>
+                    <div class="col ">
+                        <div class="row">
+                            <img srcset="./img/pic1366.jpg 1366w,
+                            ./img/pic1920.jpg 1920w" src="./img/pic1920.jpg" alt="Some picture"> 
+                            <h2>Ponad 24 lata doświadczenia</h2>
+                            <p>
+                                SIMPLE S.A. jest wiodącym w kraju producentem rozwiązań informatycznych do wspomagania zarządzania przedsiębiorstwami. Będąc producentem oprogramowania, dajemy pełną gwarancję dotyczącą jego działania oraz dostosowania do zmieniających się warunków biznesowych i przepisów prawa oraz szybkiej reakcji na zmieniające się potrzeby klientów.
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <h2>Ponad 3 500 klientów</h2>
+                            <p>
+                                Działamy na polskim rynku producentów rozwiązań klasy ERP już od ponad 24 lat! Dostarczamy rozwiązania, które sprawdziły się w wielu zróżnicowanych branżach i doskonale znamy biznes naszych klientów. Nasza oferta dostosowana jest do potrzeb głównych sektorów polskiego rynku. Ze współpracy z nami skorzystało już ponad 3,5 tysiąca firm.
+                            </p>
+                        </div>
+                                
+                        <div class="row">
+                            <h2>Ponad 23 000 użytkowników</h2>
+                            <p>
+                                Nasze produkty zawsze charakteryzowały się udanym połączeniem: innowacyjnością, szerokiej funkcjonalności, adaptowalności i skalowości jak również dbałości o rozsądny budżet, dostosowany do możliwości naszych Klientów. Dlatego w 2010 roku liczba naszych użytkowników przekroczyła 25 tysiące.
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <h2>Nasi odbiorcy</h2>
+                            <p>
+                                Odbiorcami naszych rozwiązań są głównie firmy budowlane, przedsiębiorstwa produkcyjne, uczelnie wyższe, jednostki medyczne oraz firmy usługowe i handlowe. Widzimy i wspólnie wykorzystujemy możliwości jakie daje proces integracji Polski z Unią Europejską.
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <h2>Zintegrowane rozwiązania dla każdej branży</h2>
+                            <p>
+                                SIMPLE posiada kompleksowe rozwiązania, dedykowane najwiekszym sektorom naszej gospodarki. W naszej ofercie znajdą Państwo rozwiązania dla firm o różnych profilach działalności (produkcyjnym, budowlanym, usługowym, handlowym), dla uczelni wyższych, jednostek medycznych, instytutów badawczych czy jednostek rządowych. <br> Nasze doświadczenia obejmują realizacje systemów dedykowanych pod indywidualne potrzeby klientów oraz integrację wszelkich rozwiązań wspomagających zarządzanie.
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <h2>Certyfikaty i rekomendacje</h2>
+                            <p>
+                                SIMPLE S.A. posiada istotne na polskim rynku rekomendacje od Polskiego Towarzystwa Ekonomicznego oraz Stowarzyszenia Księgowych w Polsce, które potwierdzają, że oprogramowanie SIMPLE jest dostosowywane do zmieniających się w polskich przepisów prawnych oraz wymagań Unii Europejskiej. Ponadto SIMPLE S.A. wprowadziło i stosuje system zarządania jakością ISO 90001:2008 w zakresie: projektowania, produkcji i wdrażania systemów informatycznych, a także sprzedaż i instalacja sprzętu komputerowego oraz szkolenia.
+                            </p>
+                            <p>
+                                Oprogramowanie SIMPLE zostało wyróżnione również: GAZELĄ BIZNESU, MEDALEM EUROPEJSKIM, statuetką Top-Builder oraz posiada status Microsoft Gold Certified Partner oraz BRE Partner GOLD CERTIFICATE. Osiągnięte wyniki pozwoliły zająć SIMPLE S.A. 30 miejsce w rankingu DIAMENTÓW FORBESA dla województwa mazowieckiego. Firma SIMPLE otrzymała również tytuł "Najlepszy dostawca IT dla przemysłu 2010 w kategorii ERP/MRP II (system polski)- producent".
+                            </p>
+                        </div>
+
+                        <div class="row">
+                            <h2>Zawsze blisko ciebie</h2>
+                            <p>
+                                SIMPLE S.A. wraz z Partnerami prowadzi szeroko zakrojoną sprzedaż do Klientów na terenie całego kraju. Chcemy być jak najbliżej naszych klientów, dlatego wciąż dążymy do poszerzenia sieci naszej sprzedaży w Unii Europejskiej.
+                            </p>
+                        </div>
+                                
+                                
+                    </div>
+                </div>
+                        
+            </div>
+            <footer class="footer"></footer>
+        </div>        
+        <script src="main.js"></script>
     </body>
 
 </html>
