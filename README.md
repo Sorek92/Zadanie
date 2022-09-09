@@ -7,3 +7,6 @@ node app
 
 odtworzenie w przegladarce
 http://localhost:3000/
+
+rozdzielczość 
+1280 - 1420
